@@ -1,11 +1,11 @@
 import React from "react";
 import "./Components.css";
 
-const About = () => {
+const Home = () => {
   return (
     <div className='component'>
-      <h1>This is me!</h1>
+      <h1>Home</h1>
     </div>
   );
 };
-export default About;
+export default Home;
