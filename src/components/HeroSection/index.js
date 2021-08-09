@@ -1,11 +1,17 @@
 import React from "react";
-import Video from "../../videos/video.mp4";
 import { HeroContainer, HeroBg, VideoBg } from "./HeroElements";
+
 const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='/video/mp4' />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={"https://personal-website-frieling.s3.amazonaws.com/video.mp4"}
+          type='/video/mp4'
+        />
       </HeroBg>
     </HeroContainer>
   );
