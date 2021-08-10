@@ -13,7 +13,7 @@ import {
   ArrowRight,
 } from "./HeroElements";
 import { Button } from "../ButtonElements";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -50,6 +50,9 @@ const HeroSection = () => {
           </HeroIcon>
           <HeroIcon href='https://twitter.com/EliasFrieling' target='_blank'>
             <FaTwitter />
+          </HeroIcon>
+          <HeroIcon href='mailto:eliasfrieling@gmail.com' target='_blank'>
+            <FaEnvelope />
           </HeroIcon>
         </HeroIconWrapper>
 
