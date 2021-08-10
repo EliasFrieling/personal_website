@@ -14,28 +14,22 @@ import Icon3 from "../../images/svg-3.svg";
 const Services = () => {
   return (
     <ServicesContainer id='services'>
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Header</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduces Expenses</ServicesH2>
-          <ServicesP>
-            We help reduces your fees and increase your overall revenue.
-          </ServicesP>
+          <ServicesH2>Header2</ServicesH2>
+          <ServicesP>This is the paragraph description</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Ofccies</ServicesH2>
-          <ServicesP>
-            You can access our platform online anywhere in the world.
-          </ServicesP>
+          <ServicesH2>Header2</ServicesH2>
+          <ServicesP>This is the paragraph description</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Premium benefits</ServicesH2>
-          <ServicesP>
-            Unlock our special membership card that returns 5% cashback.
-          </ServicesP>
+          <ServicesH2>Header2</ServicesH2>
+          <ServicesP>This is the paragraph description</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
