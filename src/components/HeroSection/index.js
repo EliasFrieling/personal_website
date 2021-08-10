@@ -24,7 +24,7 @@ const HeroSection = () => {
           autoPlay
           loop
           muted
-          src={"https://personal-website-frieling.s3.amazonaws.com/video.mp4"}
+          src={process.env.REACT_APP_BACKGROUND_VIDEO}
           type='/video/mp4'
         />
       </HeroBg>
