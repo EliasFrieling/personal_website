@@ -92,7 +92,13 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 1000px;
   margin: 0 0 10px 0;
   padding-right: 0;
+  height: 600px;
+
+  @media screen and (max-width: 1500px) {
+    width: 600px;
+    height: 400px;
+  }
 `;
