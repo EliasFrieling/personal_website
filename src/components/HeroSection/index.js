@@ -32,11 +32,11 @@ const HeroSection = () => {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Welcome</HeroH1>
+        <HeroH1>Welcome!</HeroH1>
         <HeroP>
-          I am currently studying Computer Science at Stevens Institute of
-          Technology. Scroll down to see what I've done or visit my blog to read
-          more
+          My name is Elias and I am currently studying Computer Science at
+          Stevens Institute of Technology. Scroll down to see what I've done or
+          visit my blog to read more
         </HeroP>
         <HeroIconWrapper>
           <HeroIcon href='https://github.com/eliasfrieling' target='_blank'>
