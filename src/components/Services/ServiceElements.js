@@ -16,7 +16,7 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesWrapper = styled.div`
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +45,7 @@ export const ServicesCard = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale() (1.02);
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
@@ -53,7 +53,7 @@ export const ServicesCard = styled.div`
 
 export const ServicesIcon = styled.img`
   height: 160px;
-  width: 160px;
+  width: 100%;
   margin-bottom: 10px;
 `;
 
