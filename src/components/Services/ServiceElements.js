@@ -16,7 +16,7 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesWrapper = styled.div`
-  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -62,7 +62,7 @@ export const ServicesH1 = styled.h1`
   color: #fff;
   margin-bottom: 64px;
 
-  @media screen and (max-width: 80px) {
+  @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
 `;
