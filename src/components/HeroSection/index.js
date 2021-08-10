@@ -5,12 +5,15 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
+  HeroIconWrapper,
+  HeroIcon,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
 import { Button } from "../ButtonElements";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -31,6 +34,21 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Text Here</HeroH1>
         <HeroP>More text here, and even more!!</HeroP>
+        <HeroIconWrapper>
+          <HeroIcon href='https://github.com/eliasfrieling' target='_blank'>
+            <FaGithub />
+          </HeroIcon>
+          <HeroIcon
+            href='https://linkedin.com/in/elias-frieling'
+            target='_blank'
+          >
+            <FaLinkedin />
+          </HeroIcon>
+          <HeroIcon href='https://twitter.com/EliasFrieling' target='_blank'>
+            <FaTwitter />
+          </HeroIcon>
+        </HeroIconWrapper>
+
         <HeroBtnWrapper>
           <Button
             to='/blog'
