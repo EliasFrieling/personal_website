@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { COLORS } from "../Tools/colors";
+const light = COLORS.light;
+const dark = COLORS.dark;
 
 export const ResumeContainer = styled.div`
-  color: #fff;
-  background: #f9f9f9;
+  background: ${light};
 `;
 export const ResumeWrapper = styled.div`
   display: flex;
@@ -17,7 +19,7 @@ export const ResumeWrapper = styled.div`
 `;
 
 export const Title = styled.p`
-  color: #000000;
+  color: ${dark};
   font-size: 24px;
   line-height: 16px;
   font-weight: 700;
@@ -31,7 +33,7 @@ export const TextWrapper = styled.div`
   padding-top: 60px;
 `;
 export const Company = styled.p`
-  color: #000000;
+  color: ${dark};
   font-size: 24px;
   line-height: 16px;
   font-weight: 700;
@@ -40,7 +42,7 @@ export const Company = styled.p`
   margin-bottom: 16px;
 `;
 export const Position = styled.p`
-  color: #000000;
+  color: ${dark};
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1.4px;
@@ -51,7 +53,7 @@ export const Position = styled.p`
 `;
 
 export const Description = styled.p`
-  color: #000000;
+  color: ${dark};
   font-size: 16px;
   line-height: 20pxpx;
   font-weight: 300;

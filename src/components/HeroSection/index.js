@@ -12,7 +12,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import { Button } from "../ButtonElements";
+import { Button } from "../Tools/ButtonElements";
 import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -62,7 +62,7 @@ const HeroSection = () => {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
-            dark='true'
+            darkTheme='true'
           >
             View my blog {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

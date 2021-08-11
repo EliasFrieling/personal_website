@@ -1,8 +1,11 @@
 import styled from "styled-components";
-
+import { COLORS } from "../Tools/colors";
+const light = COLORS.light;
+const dark = COLORS.dark;
+const button = COLORS.button;
 export const InfoContainer = styled.div`
-  color: #fff;
-  background: #010606;
+  color: ${light};
+  background: ${dark};
 `;
 
 export const InfoWrapper = styled.div`
@@ -66,7 +69,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: ${button};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -85,7 +88,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: #f7f8f1;
+  color: ${light};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -97,7 +100,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
+  color: ${light};
 
   @media screen and (max-width: 1100px) {
     margin-bottom: 0;

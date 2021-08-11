@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { COLORS } from "../Tools/colors";
+const light = COLORS.light;
+const dark = COLORS.dark;
 
 export const ProjectsContainer = styled.div`
   height: 930px;
@@ -6,7 +9,7 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: ${dark};
 
   @media screen and (max-width: 1000px) {
     height: 1200px;
@@ -43,7 +46,7 @@ export const ProjectShowcase = styled.div`
   padding-bottom: 50px;
 `;
 export const ProjectsCard = styled.div`
-  background: #fff;
+  background: ${light};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,7 +72,7 @@ export const ProjectsIcon = styled.img`
 
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: ${light};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -80,7 +83,7 @@ export const ProjectsH1 = styled.h1`
 export const ProjectsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #010606;
+  color: ${dark};
   text-align: center;
   text-decoration: none;
 `;
@@ -88,6 +91,6 @@ export const ProjectsH2 = styled.h2`
 export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
-  color: #010606;
+  color: ${dark};
   text-decoration: none;
 `;
