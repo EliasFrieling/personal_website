@@ -13,7 +13,7 @@ export const homeObjOne = {
   alt: "Me",
   img: process.env.REACT_APP_PROFILE_PICTURE,
 };
-export const homeObjThree = {
+export const homeObjTwo = {
   id: "projects",
   lightBg: true,
   lightText: false,
