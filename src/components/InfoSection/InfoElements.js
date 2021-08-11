@@ -71,10 +71,13 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-
+  padding-top: 24px;
   @media screen and (max-width: 1100px) {
     display: flex;
     justify-content: center;
+  }
+  @media only screen and (min-device-width: 480px) {
+    padding-top: 24px;
   }
 `;
 
