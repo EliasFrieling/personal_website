@@ -10,10 +10,6 @@ import {
   ProjectShowcase,
 } from "./ProjectElements";
 
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
-import Icon4 from "../../images/svg-4.svg";
 const Projects = () => {
   return (
     <ProjectsContainer id='projects'>
@@ -26,7 +22,7 @@ const Projects = () => {
             rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
-            <ProjectsIcon src={Icon4} />
+            <ProjectsIcon src={process.env.REACT_APP_PROJECT4} />
 
             <ProjectsH2>This Website</ProjectsH2>
             <ProjectsP>
@@ -43,7 +39,7 @@ const Projects = () => {
             rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
-            <ProjectsIcon src={Icon1} />
+            <ProjectsIcon src={process.env.REACT_APP_PROJECT1} />
 
             <ProjectsH2>Get On Bot</ProjectsH2>
             <ProjectsP>
@@ -59,7 +55,7 @@ const Projects = () => {
             rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
-            <ProjectsIcon src={Icon2} />
+            <ProjectsIcon src={process.env.REACT_APP_PROJECT2} />
             <ProjectsH2>Fightsite Bot</ProjectsH2>
             <ProjectsP>
               A Discord bot used on a server for patrons of thefight-site.com,
@@ -74,7 +70,7 @@ const Projects = () => {
             rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
-            <ProjectsIcon src={Icon3} />
+            <ProjectsIcon src={process.env.REACT_APP_PROJECT3} />
             <ProjectsH2>HealthTech Hackathon</ProjectsH2>
             <ProjectsP>
               Created an application to help people with rheumatoid arthritis
