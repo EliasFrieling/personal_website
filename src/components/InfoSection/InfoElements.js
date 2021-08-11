@@ -2,33 +2,41 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: #010606;
 `;
 
 export const InfoWrapper = styled.div`
-  display: grid;
+  display: flex;
+  justify-content: center;
   z-index: 1;
-  height: 1000px;
+  min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  max-width: 1100px;
+  max-width: 75%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
+  /* padding: 24px 24px; */
 `;
 
 export const InfoRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
+  grid-template-areas: "col1 col2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
 
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 25%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "col1"
+      "col2";
   }
 `;
 
@@ -49,6 +57,10 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 1100px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const TopLine = styled.p`
@@ -59,6 +71,11 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -66,18 +83,33 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8f1" : "#010606")};
+  color: #f7f8f1;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+  }
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 75%;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #fff;
+
+  @media screen and (max-width: 1100px) {
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    max-width: 60%;
+    /* Required for text-overflow to do anything */
+  }
 `;
 
 export const BtnWrap = styled.div`
