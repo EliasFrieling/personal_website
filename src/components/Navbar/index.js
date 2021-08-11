@@ -80,18 +80,6 @@ const Navbar = ({ toggle }) => {
                   Projects
                 </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks
-                  to='TODO'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  TODO
-                </NavLinks>
-              </NavItem>
             </NavMenu>
             <NavBtn>
               <NavBtnLink to='/blog'>Blog</NavBtnLink>

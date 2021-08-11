@@ -1,5 +1,7 @@
 import styled from "styled-components";
-export const ServicesContainer = styled.div`
+import { Link } from "react-router-dom";
+
+export const ProjectsContainer = styled.div`
   height: 930px;
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@ export const ServicesContainer = styled.div`
   }
 `;
 
-export const ServicesWrapper = styled.div`
+export const ProjectsWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -31,8 +33,14 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr;
   }
 `;
-
-export const ServicesCard = styled.div`
+export const ProjectShowcase = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+`;
+export const ProjectsCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -51,13 +59,13 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const ServicesIcon = styled.img`
+export const ProjectsIcon = styled.img`
   height: 160px;
   width: 100%;
   margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -67,12 +75,17 @@ export const ServicesH1 = styled.h1`
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const ProjectsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #010606;
+  text-align: center;
+  text-decoration: none;
 `;
 
-export const ServicesP = styled.p`
+export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
+  color: #010606;
+  text-decoration: none;
 `;
