@@ -60,7 +60,7 @@ export const HeroIcon = styled.a`
 `;
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 90vw;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -91,7 +91,6 @@ export const HeroP = styled.p`
   color: #fff;
   font-size: 24px;
   text-align: center;
-  max-width: 600px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
