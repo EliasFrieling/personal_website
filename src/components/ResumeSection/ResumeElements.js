@@ -3,17 +3,13 @@ import styled from "styled-components";
 export const ResumeContainer = styled.div`
   color: #fff;
   background: #f9f9f9;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `;
 export const ResumeWrapper = styled.div`
   display: flex;
   z-index: 1;
-  height: 1000px;
+  min-height: 100vh;
   width: 100%;
-  max-width: 1100px;
+  max-width: 100vw;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -31,9 +27,8 @@ export const Title = styled.p`
   margin-bottom: 64px;
 `;
 export const TextWrapper = styled.div`
-  max-width: 800px;
+  max-width: 75vw;
   padding-top: 60px;
-  padding-bottom: 60px;
 `;
 export const Company = styled.p`
   color: #000000;

@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1040px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -60,7 +60,7 @@ export const HeroIcon = styled.a`
 `;
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 90vw;
+  max-width: 75vw;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -94,7 +94,7 @@ export const HeroP = styled.p`
   width: 30vw;
   @media screen and (max-width: 768px) {
     font-size: 24px;
-    width: 70vw;
+    width: 75vw;
   }
 
   @media screen and (max-width: 480px) {
