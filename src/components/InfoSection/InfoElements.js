@@ -60,6 +60,8 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 1100px) {
     padding-bottom: 0;
+    max-width: 70vw;
+    text-align: center;
   }
 `;
 
@@ -72,10 +74,7 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
   padding-top: 24px;
-  @media screen and (max-width: 1100px) {
-    display: flex;
-    justify-content: center;
-  }
+
   @media only screen and (min-device-width: 480px) {
     padding-top: 24px;
   }
@@ -88,10 +87,6 @@ export const Heading = styled.h1`
   font-weight: 600;
   color: #f7f8f1;
 
-  @media screen and (max-width: 1100px) {
-    display: flex;
-    justify-content: center;
-  }
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -105,12 +100,10 @@ export const Subtitle = styled.p`
   color: #fff;
 
   @media screen and (max-width: 1100px) {
-    text-align: center;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     word-wrap: break-word;
-    max-width: 70vw;
   }
 `;
 
