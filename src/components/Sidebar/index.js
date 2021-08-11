@@ -18,13 +18,37 @@ export const Sidebar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to='about' onClick={toggle}>
+            <SidebarLink
+              to='about'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              onClick={toggle}
+            >
               About Me
             </SidebarLink>
-            <SidebarLink to='experience' onClick={toggle}>
+            <SidebarLink
+              to='experience'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              onClick={toggle}
+            >
               Experience
             </SidebarLink>
-            <SidebarLink to='projects' onClick={toggle}>
+            <SidebarLink
+              to='projects'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              onClick={toggle}
+            >
               Projects
             </SidebarLink>
           </SidebarMenu>

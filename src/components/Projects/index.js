@@ -23,6 +23,7 @@ const Projects = () => {
           <a
             href='https://github.com/EliasFrieling/personal_website'
             target='_blank'
+            rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
             <ProjectsIcon src={Icon4} />
@@ -39,6 +40,7 @@ const Projects = () => {
           <a
             href='https://github.com/EliasFrieling/get_on_discord_bot'
             target='_blank'
+            rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
             <ProjectsIcon src={Icon1} />
@@ -54,6 +56,7 @@ const Projects = () => {
           <a
             href='https://github.com/EliasFrieling/fightsitebot'
             target='_blank'
+            rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
             <ProjectsIcon src={Icon2} />
@@ -68,6 +71,7 @@ const Projects = () => {
           <a
             href='https://github.com/danpinto97/HealthTechHack'
             target='_blank'
+            rel='noreferrer'
             style={{ textDecoration: "none" }}
           >
             <ProjectsIcon src={Icon3} />
