@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ProjectsContainer = styled.div`
   height: 930px;
@@ -9,11 +8,14 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   background: #010606;
 
+  @media screen and (max-width: 1000px) {
+    height: 1200px;
+  }
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 1500px;
   }
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1600px;
   }
 `;
 

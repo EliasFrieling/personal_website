@@ -21,11 +21,11 @@ export const Sidebar = ({ isOpen, toggle }) => {
             <SidebarLink to='about' onClick={toggle}>
               About Me
             </SidebarLink>
-            <SidebarLink to='projects' onClick={toggle}>
-              Projects
-            </SidebarLink>
             <SidebarLink to='experience' onClick={toggle}>
               Experience
+            </SidebarLink>
+            <SidebarLink to='projects' onClick={toggle}>
+              Projects
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>

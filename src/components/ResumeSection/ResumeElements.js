@@ -9,7 +9,7 @@ export const ResumeContainer = styled.div`
   }
 `;
 export const ResumeWrapper = styled.div`
-  display: grid;
+  display: flex;
   z-index: 1;
   height: 1000px;
   width: 100%;
@@ -20,20 +20,6 @@ export const ResumeWrapper = styled.div`
   justify-content: center;
 `;
 
-export const Column1 = styled.div`
-  position: relative;
-  top: -75px;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col1;
-`;
-
-export const Column2 = styled.div`
-  text-align: left;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-`;
 export const Title = styled.p`
   color: #000000;
   font-size: 24px;
@@ -41,11 +27,12 @@ export const Title = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 64px;
 `;
 export const TextWrapper = styled.div`
   max-width: 800px;
-  padding-top: 0;
+  padding-top: 60px;
   padding-bottom: 60px;
 `;
 export const Company = styled.p`
@@ -67,18 +54,7 @@ export const Position = styled.p`
   display: inline-block;
   font-weight: 500;
 `;
-export const ResumeRow = styled.div`
-  display: grid;
-  grid-auto-columns: 200px max-content;
-  align-items: start;
-  position: relative;
-  top: 150px;
-  grid-template-areas: "col1 col2";
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: "col2";
-  }
-`;
 export const Description = styled.p`
   color: #000000;
   font-size: 16px;
