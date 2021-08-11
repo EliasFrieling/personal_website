@@ -31,7 +31,7 @@ export const InfoRow = styled.div`
 
   @media screen and (max-width: 1100px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 25%;
+    grid-template-rows: 50% 40%;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
