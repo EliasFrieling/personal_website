@@ -1,6 +1,7 @@
 # Personal Website For Computer Science Students
 
 This is my personal website, feel free to clone it and use it as a template for yourself!
+<img src="https://i.ibb.co/0BhxTj0/Screenshot-from-2021-08-12-15-20-21.png" alt="Website image"/>
 
 ## Installation
 
