@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import { Link as LinkR } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { COLORS } from "../Tools/colors";
 const light = COLORS.light;
@@ -70,7 +69,7 @@ export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
 `;
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled.a`
   justify-content: center;
   background: ${button};
   border-radius: 50px;

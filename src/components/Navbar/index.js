@@ -83,7 +83,9 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/blog'>Blog</NavBtnLink>
+              <NavBtnLink href='https://blog.eliasfrieling.com' target='_blank'>
+                Blog
+              </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

@@ -58,7 +58,8 @@ const HeroSection = () => {
 
         <HeroBtnWrapper>
           <Button
-            to='/blog'
+            href='https://blog.eliasfrieling.com'
+            target='_blank'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'

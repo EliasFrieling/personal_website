@@ -53,7 +53,9 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to='/blog'>Blog</SidebarRoute>
+            <SidebarRoute href='https://blog.eliasfrieling.com' target='_blank'>
+              Blog
+            </SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

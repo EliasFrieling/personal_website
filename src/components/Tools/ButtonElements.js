@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { COLORS } from "./colors";
 const light = COLORS.light;
 const dark = COLORS.dark;
 const button = COLORS.button;
 
-export const Button = styled(Link)`
+export const Button = styled.a`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? button : dark)};
   white-space: nowrap;
