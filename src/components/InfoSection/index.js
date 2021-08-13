@@ -12,6 +12,8 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElements";
+import { IconWrapper } from "../Tools/Icons/IconElements";
+import { EmailIcon } from "../Tools/Icons";
 const InfoSection = ({ id, img, topLine, headline, description, alt }) => {
   return (
     <>
@@ -23,6 +25,10 @@ const InfoSection = ({ id, img, topLine, headline, description, alt }) => {
                 <TopLine>{topLine}</TopLine>
                 <Heading>{headline}</Heading>
                 <Subtitle>{description}</Subtitle>
+                <IconWrapper>
+                  eliasfrieling@gmail.com
+                  <EmailIcon link={process.env.REACT_APP_EMAIL} />
+                </IconWrapper>
               </TextWrapper>
             </Column1>
             <Column2>

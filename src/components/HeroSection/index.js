@@ -5,21 +5,21 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
-  HeroIconWrapper,
-  HeroIcon,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
+import { IconWrapper } from "../Tools/Icons/IconElements";
 import { Button } from "../Tools/ButtonElements";
-import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { EmailIcon, GitIcon, LinkedInIcon, TwitterIcon } from "../Tools/Icons";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
   };
+  console.log(process.env.REACT_APP_GITHUB);
   return (
     <HeroContainer>
       <HeroBg>
@@ -38,23 +38,12 @@ const HeroSection = () => {
           Stevens Institute of Technology. Scroll down to see what I've done or
           visit my blog to read more
         </HeroP>
-        <HeroIconWrapper>
-          <HeroIcon href='https://github.com/eliasfrieling' target='_blank'>
-            <FaGithub />
-          </HeroIcon>
-          <HeroIcon
-            href='https://linkedin.com/in/elias-frieling'
-            target='_blank'
-          >
-            <FaLinkedin />
-          </HeroIcon>
-          <HeroIcon href='https://twitter.com/EliasFrieling' target='_blank'>
-            <FaTwitter />
-          </HeroIcon>
-          <HeroIcon href='mailto:eliasfrieling@gmail.com' target='_blank'>
-            <FaEnvelope />
-          </HeroIcon>
-        </HeroIconWrapper>
+        <IconWrapper pad>
+          <GitIcon link={process.env.REACT_APP_GITHUB} />
+          <LinkedInIcon link={process.env.REACT_APP_LINKEDIN} />
+          <TwitterIcon link={process.env.REACT_APP_TWITTER} />
+          <EmailIcon link={process.env.REACT_APP_EMAIL} />
+        </IconWrapper>
 
         <HeroBtnWrapper>
           <Button
