@@ -24,6 +24,10 @@ REACT_APP_PROJECT1=(url to an picture or file path to a picture)
 REACT_APP_PROJECT2=(url to an picture or file path to a picture)
 REACT_APP_PROJECT3=(url to an picture or file path to a picture)
 REACT_APP_PROJECT4=(url to an picture or file path to a picture)
+REACT_APP_GITHUB=(url)
+REACT_APP_LINKEDIN=(url)
+REACT_APP_TWITTER=(url)
+REACT_APP_EMAIL=(mailto:example@email.com)
 ```
 
 These files will consist of the video background on the home page, the profile picture in the about section, and the pictures on the cards in the projects sections. There are tons of great sites with stock photos and videos out there, I used undraw.co and www.pexels.com
