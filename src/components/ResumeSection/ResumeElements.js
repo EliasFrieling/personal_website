@@ -10,6 +10,7 @@ export const ResumeWrapper = styled.div`
   display: flex;
   z-index: 1;
   min-height: 100vh;
+  line-height: 1.5em;
   width: 100%;
   max-width: 100vw;
   margin-right: auto;
@@ -21,7 +22,6 @@ export const ResumeWrapper = styled.div`
 export const Title = styled.p`
   color: ${dark};
   font-size: 24px;
-  line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -29,13 +29,16 @@ export const Title = styled.p`
   margin-bottom: 64px;
 `;
 export const TextWrapper = styled.div`
-  max-width: 75vw;
+  max-width: 50vw;
   padding-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 75vw;
+  }
 `;
 export const Company = styled.p`
   color: ${dark};
   font-size: 24px;
-  line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -44,7 +47,6 @@ export const Company = styled.p`
 export const Position = styled.p`
   color: ${dark};
   font-size: 16px;
-  line-height: 16px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -55,7 +57,6 @@ export const Position = styled.p`
 export const Description = styled.p`
   color: ${dark};
   font-size: 16px;
-  line-height: 20pxpx;
   font-weight: 300;
   letter-spacing: 1.4px;
   margin-bottom: 64px;
