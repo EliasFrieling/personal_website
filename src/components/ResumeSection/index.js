@@ -18,19 +18,19 @@ const ResumeSection = () => {
             <Company>MEMX</Company>
             <Position>Full Stack Intern • June 2021 - Present</Position>
             <Description>
-              • Created a tool that allows a user to inject an order into the
-              stock exchange through a React frontend allowing for easier
-              testing of the exchange
-              <br />• Wrote data validation checks on a NodeJS server that would
-              validate all the fields a user enters in the order and transform
-              the data to match the exchange server API specifications
-              <br />• Populated a table with live market data that updates every
-              ten seconds with price changes using a NodeJS websocket allowing
-              users to view up to date prices when entering in orders
+              • Designed and implemented a tool to enter orders into the
+              exchange using React and NodeJS leading to greater efficiency for
+              the Market Operations department in testing the exchange and
+              onboarding clients
+              <br />• Populated a table with live market data updating with real
+              time price changes giving the most up to date pricing information
+              to users as they enter orders
+              <br />• Communicated with key stakeholders on the UX design of the
+              tool to best meet business requirements
             </Description>
             <Company>McKinsey & Company</Company>
             <Position>
-              Software Development Intern • September 2020 – December 2020
+              Software Engineer Intern • September 2020 – December 2020
             </Position>
             <Description>
               • Migrated steps in the recruiting pipeline to cloud based
@@ -38,20 +38,18 @@ const ResumeSection = () => {
               and perform data validation leading to a streamlined recruiting
               process
               <br />• Developed and documented the creation of reusable assets
-              in AWS showing the advantages of moving company services to a
-              cloud based environment
-              <br />• Optimized scripts by evaluating the efficiency and
-              developing fixes to greatly increase speed
+              in AWS as part of a proof of concept to show the advantages of
+              moving company services to a cloud-based environment
             </Description>
             <Company>MEMX</Company>
             <Position>
-              Software Development Intern • January 2020 – May 2020
+              Software Engineer Intern • January 2020 – May 2020
             </Position>
             <Description>
-              • Imported data from an API to an internal data tool allowing for
+              • Imported data from an API to an internal data tool showcasing
               broad visualization of stock market data and documented the steps
-              of how to import various file types allowing easier use of the
-              data tool
+              of how to import various file types for future use in various
+              departments
               <br />• Designed and implemented software that sends and receives
               specialized messages to financial institutions as part of the post
               trade system of the stock exchange
