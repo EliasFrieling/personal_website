@@ -43,10 +43,6 @@ npm start
 
 From there everything should be working!
 
-## Customizing the website
-
-If you want to use this website for yourself feel free! Read my blog post on how I created the website where I go over what to do if you want to personalize the site. My only request would be to contact me if you do! Shoot me an email at eliasfrieling@gmail.com with what you come with I'd love to see it.
-
 ## License
 
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/EliasFrieling/personal_website/blob/main/LICENSE.txt)
