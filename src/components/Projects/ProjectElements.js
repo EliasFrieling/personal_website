@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { COLORS } from "../Tools/colors";
+import styled from 'styled-components';
+import { COLORS } from '../Tools/colors';
 const light = COLORS.light;
 const dark = COLORS.dark;
 

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { COLORS } from "../Tools/colors";
+import styled from 'styled-components';
+import { COLORS } from '../Tools/colors';
 const light = COLORS.light;
 const dark = COLORS.dark;
 const button = COLORS.button;
@@ -24,7 +24,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   align-items: center;
-  grid-template-areas: "col1 col2";
+  grid-template-areas: 'col1 col2';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
@@ -38,8 +38,8 @@ export const InfoRow = styled.div`
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "col1"
-      "col2";
+      'col1'
+      'col2';
   }
 `;
 

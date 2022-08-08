@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll } from "react-scroll";
-import { COLORS } from "../Tools/colors";
+import React, { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
+import { COLORS } from '../Tools/colors';
 import {
   Nav,
   NavbarContainer,
@@ -13,7 +13,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -38,7 +38,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: COLORS.light }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/' onClick={toggleHome}>
+            <NavLogo to="/" onClick={toggleHome}>
               Elias Frieling
             </NavLogo>
             <MobileIcon onClick={toggle}>
@@ -47,11 +47,11 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to='about'
+                  to="about"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   About
@@ -59,11 +59,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='experience'
+                  to="experience"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   Experience
@@ -71,11 +71,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='projects'
+                  to="projects"
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact='true'
+                  exact="true"
                   offset={-80}
                 >
                   Projects
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink href='https://blog.eliasfrieling.com' target='_blank'>
+              <NavBtnLink href="https://blog.eliasfrieling.com" target="_blank">
                 Blog
               </NavBtnLink>
             </NavBtn>

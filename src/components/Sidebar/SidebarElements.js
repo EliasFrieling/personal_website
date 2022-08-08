@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
-import { FaTimes } from "react-icons/fa";
-import { COLORS } from "../Tools/colors";
+import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
+import { FaTimes } from 'react-icons/fa';
+import { COLORS } from '../Tools/colors';
 const light = COLORS.light;
 const dark = COLORS.dark;
 const button = COLORS.button;
@@ -16,8 +16,8 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`

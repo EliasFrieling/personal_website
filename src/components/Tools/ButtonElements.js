@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { COLORS } from "./colors";
+import styled from 'styled-components';
+import { COLORS } from './colors';
 const light = COLORS.light;
 const dark = COLORS.dark;
 const button = COLORS.button;
@@ -8,9 +8,9 @@ export const Button = styled.a`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? button : dark)};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
   color: ${({ darkTheme }) => (darkTheme ? dark : light)};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
   cursor: pointer;

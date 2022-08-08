@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   HeroContainer,
   HeroBg,
@@ -11,9 +11,9 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
-} from "./HeroElements";
-import { Button } from "../Tools/ButtonElements";
-import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+} from './HeroElements';
+import { Button } from '../Tools/ButtonElements';
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -28,42 +28,38 @@ const HeroSection = () => {
           loop
           muted
           src={process.env.REACT_APP_BACKGROUND_VIDEO}
-          type='/video/mp4'
+          type="/video/mp4"
         />
       </HeroBg>
       <HeroContent>
         <HeroH1>Welcome!</HeroH1>
         <HeroP>
-          My name is Elias and I am currently studying Computer Science at
-          Stevens Institute of Technology. Scroll down to see what I've done or
-          visit my blog to read more
+          My name is Elias and I am currently studying Computer Science at Stevens Institute of
+          Technology. Scroll down to see what I've done or visit my blog to read more
         </HeroP>
         <HeroIconWrapper>
-          <HeroIcon href='https://github.com/eliasfrieling' target='_blank'>
+          <HeroIcon href="https://github.com/eliasfrieling" target="_blank">
             <FaGithub />
           </HeroIcon>
-          <HeroIcon
-            href='https://linkedin.com/in/elias-frieling'
-            target='_blank'
-          >
+          <HeroIcon href="https://linkedin.com/in/elias-frieling" target="_blank">
             <FaLinkedin />
           </HeroIcon>
-          <HeroIcon href='https://twitter.com/EliasFrieling' target='_blank'>
+          <HeroIcon href="https://twitter.com/EliasFrieling" target="_blank">
             <FaTwitter />
           </HeroIcon>
-          <HeroIcon href='mailto:eliasfrieling@gmail.com' target='_blank'>
+          <HeroIcon href="mailto:eliasfrieling@gmail.com" target="_blank">
             <FaEnvelope />
           </HeroIcon>
         </HeroIconWrapper>
 
         <HeroBtnWrapper>
           <Button
-            href='https://blog.eliasfrieling.com'
-            target='_blank'
+            href="https://blog.eliasfrieling.com"
+            target="_blank"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary='true'
-            darkTheme='true'
+            primary="true"
+            darkTheme="true"
           >
             View my blog {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

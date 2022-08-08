@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   InfoContainer,
   InfoWrapper,
@@ -11,7 +11,7 @@ import {
   Subtitle,
   ImgWrap,
   Img,
-} from "./InfoElements";
+} from './InfoElements';
 const InfoSection = ({ id, img, topLine, headline, description, alt }) => {
   return (
     <>

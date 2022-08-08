@@ -1,13 +1,13 @@
-import { Link as LinkR } from "react-router-dom";
-import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
-import { COLORS } from "../Tools/colors";
+import { Link as LinkR } from 'react-router-dom';
+import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
+import { COLORS } from '../Tools/colors';
 
 const light = COLORS.light;
 const dark = COLORS.dark;
 const button = COLORS.button;
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? dark : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? dark : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;

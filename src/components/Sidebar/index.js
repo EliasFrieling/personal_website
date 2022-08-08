@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SidebarContainer,
   Icon,
@@ -8,7 +8,7 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
-} from "./SidebarElements";
+} from './SidebarElements';
 export const Sidebar = ({ isOpen, toggle }) => {
   return (
     <>
@@ -19,33 +19,33 @@ export const Sidebar = ({ isOpen, toggle }) => {
         <SidebarWrapper>
           <SidebarMenu>
             <SidebarLink
-              to='about'
+              to="about"
               smooth={true}
               duration={500}
               spy={true}
-              exact='true'
+              exact="true"
               offset={-80}
               onClick={toggle}
             >
               About Me
             </SidebarLink>
             <SidebarLink
-              to='experience'
+              to="experience"
               smooth={true}
               duration={500}
               spy={true}
-              exact='true'
+              exact="true"
               offset={-80}
               onClick={toggle}
             >
               Experience
             </SidebarLink>
             <SidebarLink
-              to='projects'
+              to="projects"
               smooth={true}
               duration={500}
               spy={true}
-              exact='true'
+              exact="true"
               offset={-80}
               onClick={toggle}
             >
@@ -53,7 +53,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute href='https://blog.eliasfrieling.com' target='_blank'>
+            <SidebarRoute href="https://blog.eliasfrieling.com" target="_blank">
               Blog
             </SidebarRoute>
           </SideBtnWrap>
