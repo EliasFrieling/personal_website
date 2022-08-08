@@ -1,35 +1,35 @@
-import React from "react";
-import { Icon } from "./IconElements";
-import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import React from 'react';
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { Icon } from './IconElements';
 
-export const GitIcon = ({ link }) => {
+export function GitIcon({ link }) {
   return (
-    <Icon href={link} target='_blank'>
+    <Icon href={link} target="_blank">
       <FaGithub />
     </Icon>
   );
-};
+}
 
-export const TwitterIcon = ({ link }) => {
+export function TwitterIcon({ link }) {
   return (
-    <Icon href={link} target='_blank'>
+    <Icon href={link} target="_blank">
       <FaTwitter />
     </Icon>
   );
-};
+}
 
-export const LinkedInIcon = ({ link }) => {
+export function LinkedInIcon({ link }) {
   return (
-    <Icon href={link} target='_blank'>
+    <Icon href={link} target="_blank">
       <FaLinkedin />
     </Icon>
   );
-};
+}
 
-export const EmailIcon = ({ link }) => {
+export function EmailIcon({ link }) {
   return (
-    <Icon href={link} target='_blank'>
+    <Icon href={link} target="_blank">
       <FaEnvelope />
     </Icon>
   );
-};
+}

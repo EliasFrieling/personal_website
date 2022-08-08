@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { COLORS } from "../colors";
+import styled from 'styled-components';
+import { COLORS } from '../colors';
 
-const light = COLORS.light;
+const { light } = COLORS;
 
 export const IconWrapper = styled.div`
-  padding-top: ${({ pad }) => (pad ? "1.4rem" : 0)};
+  padding-top: ${({ pad }) => (pad ? '1.4rem' : 0)};
 
   font-size: 1.8rem;
   cursor: pointer;
