@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Personal Website For Computer Science Students
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal website, feel free to clone it and use it as a template for yourself!
+<img src="https://i.ibb.co/0BhxTj0/Screenshot-from-2021-08-12-15-20-21.png" alt="Website image"/>
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+### Fork the repo
 
-### `npm start`
+Use git to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Install it in your local environment
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Once you've decided where you are going to store the repo, **[clone it](https://help.github.com/articles/cloning-a-repository/)**.
 
-### `npm test`
+## Configuring the website
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After you've cloned the repo, you need to configure a `.env` file. In the source directory create a file called `.env` and add the following lines to it
 
-### `npm run build`
+```
+REACT_APP_BACKGROUND_VIDEO=(url to an mp4 or file path to a mp4)
+REACT_APP_PROFILE_PICTURE=(url to an picture or file path to a picture)
+REACT_APP_PROJECT1=(url to an picture or file path to a picture)
+REACT_APP_PROJECT2=(url to an picture or file path to a picture)
+REACT_APP_PROJECT3=(url to an picture or file path to a picture)
+REACT_APP_PROJECT4=(url to an picture or file path to a picture)
+REACT_APP_GITHUB=(url)
+REACT_APP_LINKEDIN=(url)
+REACT_APP_TWITTER=(url)
+REACT_APP_EMAIL=(mailto:example@email.com)
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These files will consist of the video background on the home page, the profile picture in the about section, and the pictures on the cards in the projects sections. There are tons of great sites with stock photos and videos out there, I used undraw.co and www.pexels.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the website open a terminal and run
 
-### `npm run eject`
+```bash
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+From there everything should be working!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/EliasFrieling/personal_website/blob/main/LICENSE.txt)

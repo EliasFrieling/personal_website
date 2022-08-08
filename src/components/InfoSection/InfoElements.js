@@ -59,7 +59,6 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 0;
   padding-bottom: 60px;
 
   @media screen and (max-width: 1100px) {
@@ -68,7 +67,15 @@ export const TextWrapper = styled.div`
     text-align: center;
   }
 `;
-
+export const IconTextWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  @media screen and (max-width: 1100px) {
+    padding-top: 20px;
+    justify-content: center;
+  }
+`;
 export const TopLine = styled.p`
   color: ${button};
   font-size: 16px;

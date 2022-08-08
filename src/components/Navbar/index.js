@@ -7,8 +7,6 @@ import {
   MobileIcon,
   Nav,
   NavbarContainer,
-  NavBtn,
-  NavBtnLink,
   NavItem,
   NavLinks,
   NavLogo,
@@ -64,11 +62,6 @@ function Navbar({ toggle }) {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink href="https://blog.eliasfrieling.com" target="_blank">
-              Blog
-            </NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>

@@ -1,26 +1,9 @@
-import React, { useState } from 'react';
-import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import {
-  HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroIconWrapper,
-  HeroIcon,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
-} from './HeroElements';
-import { Button } from '../Tools/ButtonElements';
+import React from 'react';
+import { EmailIcon, GitIcon, LinkedInIcon, TwitterIcon } from '../Tools/Icons';
+import { IconWrapper } from '../Tools/Icons/IconElements';
+import { HeroBg, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './HeroElements';
 
 function HeroSection() {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
   return (
     <HeroContainer>
       <HeroBg>
@@ -36,35 +19,14 @@ function HeroSection() {
         <HeroH1>Welcome!</HeroH1>
         <HeroP>
           My name is Elias and I am currently studying Computer Science at Stevens Institute of
-          Technology. Scroll down to see what I've done or visit my blog to read more
+          Technology. Scroll down to see what I've done!
         </HeroP>
-        <HeroIconWrapper>
-          <HeroIcon href="https://github.com/eliasfrieling" target="_blank">
-            <FaGithub />
-          </HeroIcon>
-          <HeroIcon href="https://linkedin.com/in/elias-frieling" target="_blank">
-            <FaLinkedin />
-          </HeroIcon>
-          <HeroIcon href="https://twitter.com/EliasFrieling" target="_blank">
-            <FaTwitter />
-          </HeroIcon>
-          <HeroIcon href="mailto:eliasfrieling@gmail.com" target="_blank">
-            <FaEnvelope />
-          </HeroIcon>
-        </HeroIconWrapper>
-
-        <HeroBtnWrapper>
-          <Button
-            href="https://blog.eliasfrieling.com"
-            target="_blank"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            darkTheme="true"
-          >
-            View my blog {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper>
+        <IconWrapper pad>
+          <GitIcon link={process.env.REACT_APP_GITHUB} />
+          <LinkedInIcon link={process.env.REACT_APP_LINKEDIN} />
+          <TwitterIcon link={process.env.REACT_APP_TWITTER} />
+          <EmailIcon link={process.env.REACT_APP_EMAIL} />
+        </IconWrapper>
       </HeroContent>
     </HeroContainer>
   );

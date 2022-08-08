@@ -1,16 +1,19 @@
 import React from 'react';
+import { EmailIcon } from '../Tools/Icons';
+import { IconWrapper } from '../Tools/Icons/IconElements';
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
   Column1,
   Column2,
+  Heading,
+  IconTextWrapper,
+  Img,
+  ImgWrap,
+  InfoContainer,
+  InfoRow,
+  InfoWrapper,
+  Subtitle,
   TextWrapper,
   TopLine,
-  Heading,
-  Subtitle,
-  ImgWrap,
-  Img,
 } from './InfoElements';
 
 function InfoSection({ id, img, topLine, headline, description, alt }) {
@@ -23,6 +26,12 @@ function InfoSection({ id, img, topLine, headline, description, alt }) {
               <TopLine>{topLine}</TopLine>
               <Heading>{headline}</Heading>
               <Subtitle>{description}</Subtitle>
+              <IconTextWrapper>
+                eliasfrieling@gmail.com
+                <IconWrapper>
+                  <EmailIcon link={process.env.REACT_APP_EMAIL} />
+                </IconWrapper>
+              </IconTextWrapper>
             </TextWrapper>
           </Column1>
           <Column2>
