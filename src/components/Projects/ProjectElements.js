@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { COLORS } from '../Tools/colors';
-const light = COLORS.light;
-const dark = COLORS.dark;
+
+const { light } = COLORS;
+const { dark } = COLORS;
 
 export const ProjectsContainer = styled.div`
   height: 930px;

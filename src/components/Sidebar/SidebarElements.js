@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
 import { COLORS } from '../Tools/colors';
-const light = COLORS.light;
-const dark = COLORS.dark;
-const button = COLORS.button;
+
+const { light } = COLORS;
+const { dark } = COLORS;
+const { button } = COLORS;
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;

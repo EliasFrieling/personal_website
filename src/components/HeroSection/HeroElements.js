@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { COLORS } from '../Tools/colors';
 
-const light = COLORS.light;
-const dark = COLORS.dark;
+const { light } = COLORS;
+const { dark } = COLORS;
 
 export const HeroContainer = styled.div`
   background: ${dark};

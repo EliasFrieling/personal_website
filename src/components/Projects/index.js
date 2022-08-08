@@ -10,7 +10,7 @@ import {
   ProjectShowcase,
 } from './ProjectElements';
 
-const Projects = () => {
+function Projects() {
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>Projects</ProjectsH1>
@@ -79,6 +79,6 @@ const Projects = () => {
       </ProjectsWrapper>
     </ProjectsContainer>
   );
-};
+}
 
 export default Projects;

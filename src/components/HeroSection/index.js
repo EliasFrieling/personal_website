@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import {
   HeroContainer,
   HeroBg,
@@ -13,8 +14,8 @@ import {
   ArrowRight,
 } from './HeroElements';
 import { Button } from '../Tools/ButtonElements';
-import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-const HeroSection = () => {
+
+function HeroSection() {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -67,6 +68,6 @@ const HeroSection = () => {
       </HeroContent>
     </HeroContainer>
   );
-};
+}
 
 export default HeroSection;

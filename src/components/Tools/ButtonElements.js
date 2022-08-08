@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { COLORS } from './colors';
-const light = COLORS.light;
-const dark = COLORS.dark;
-const button = COLORS.button;
 
+const { light } = COLORS;
+const { dark } = COLORS;
+const { button } = COLORS;
+
+// eslint-disable-next-line import/prefer-default-export
 export const Button = styled.a`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? button : dark)};

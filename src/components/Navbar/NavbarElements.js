@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 import { COLORS } from '../Tools/colors';
 
-const light = COLORS.light;
-const dark = COLORS.dark;
-const button = COLORS.button;
+const { light } = COLORS;
+const { dark } = COLORS;
+const { button } = COLORS;
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? dark : 'transparent')};
   height: 80px;

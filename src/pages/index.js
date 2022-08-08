@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
+import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
 import ResumeSection from '../components/ResumeSection';
+// eslint-disable-next-line import/no-named-as-default
+import Sidebar from '../components/Sidebar';
 
 import { homeObjOne } from '../components/InfoSection/Data';
-const Home = () => {
+
+function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -23,6 +25,6 @@ const Home = () => {
       <Projects />
     </>
   );
-};
+}
 
 export default Home;
